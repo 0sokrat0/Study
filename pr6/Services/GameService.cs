@@ -30,13 +30,13 @@ public class GameService
         while (_player.IsAlive())
         {
             _turnCount++;
-            Console.WriteLine($"=== ХОД {_turnCount} ===");
+            Console.WriteLine($"ХОД {_turnCount}");
             _displayService.DisplayPlayerStatus(_player);
             Console.WriteLine();
 
             if (_turnCount % 10 == 0)
             {
-                Console.WriteLine("🔥 ВСТРЕЧА С БОССОМ! 🔥");
+                Console.WriteLine("ВСТРЕЧА С БОССОМ!");
                 var boss = MonsterFactory.CreateRandomBoss(_random);
                 if (!_combatService.FightBoss(_player, boss))
                 {
@@ -48,12 +48,12 @@ public class GameService
             {
                 if (RandomChoice.NextInt(_random, 1, 3) == 1)
                 {
-                    Console.WriteLine("📦 Вы нашли сундук!");
+                    Console.WriteLine("Вы нашли сундук!");
                     _chestService.OpenChest(_player);
                 }
                 else
                 {
-                    Console.WriteLine("⚔️ Встреча с врагом!");
+                    Console.WriteLine("Встреча с врагом!");
                     var enemy = MonsterFactory.CreateRandomEnemy(_random);
                     if (!_combatService.FightEnemy(_player, enemy))
                     {
@@ -65,7 +65,7 @@ public class GameService
 
             if (_player.IsFrozen)
             {
-                Console.WriteLine("❄️ Вы заморожены и пропускаете ход!");
+                Console.WriteLine("Вы заморожены и пропускаете ход!");
                 _player.IsFrozen = false;
             }
 
