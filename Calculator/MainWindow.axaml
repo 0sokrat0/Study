@@ -1,0 +1,63 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Calculator.MainWindow"
+        Title="Калькулятор"
+        Width="400" Height="350"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" 
+          ColumnDefinitions="Auto,*"
+          Margin="20"
+          RowSpacing="15"
+          ColumnSpacing="15">
+
+        <TextBlock Grid.Row="0" Grid.Column="0" 
+                   Text="Первое число:" 
+                   VerticalAlignment="Center"/>
+
+        <TextBox Grid.Row="0" Grid.Column="1" 
+                 Name="FirstNumberTextBox"
+                 Text=""/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" 
+                   Text="Второе число:" 
+                   VerticalAlignment="Center"/>
+
+        <TextBox Grid.Row="1" Grid.Column="1" 
+                 Name="SecondNumberTextBox"
+                 Text=""/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" 
+                   Text="Операция:" 
+                   VerticalAlignment="Center"/>
+
+        <ComboBox Grid.Row="2" Grid.Column="1" 
+                  Name="OperationComboBox"
+                  SelectedIndex="0">
+            <ComboBoxItem Content="Сложение"/>
+            <ComboBoxItem Content="Вычитание"/>
+            <ComboBoxItem Content="Умножение"/>
+            <ComboBoxItem Content="Деление"/>
+            <ComboBoxItem Content="Остаток от деления"/>
+        </ComboBox>
+
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                Content="Вычислить"
+                Name="CalculateButton"
+                Click="CalculateButton_Click"
+                Height="40"
+                Margin="0,10,0,0"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" 
+                   Text="Результат:" 
+                   VerticalAlignment="Center"/>
+
+        <TextBox Grid.Row="4" Grid.Column="1" 
+                 Name="ResultTextBox"
+                 IsReadOnly="True"
+                 Background="#F0F0F0"
+                 Foreground="Black"/>
+
+    </Grid>
+</Window>
+
