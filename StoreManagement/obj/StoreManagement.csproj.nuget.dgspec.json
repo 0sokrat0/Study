@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/home/sokrat/Рабочий стол/Dev/KIP/StoreManagement/StoreManagement.csproj": {}
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/StoreManagement/StoreManagement.csproj": {}
   },
   "projects": {
-    "/home/sokrat/Рабочий стол/Dev/KIP/StoreManagement/StoreManagement.csproj": {
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/StoreManagement/StoreManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sokrat/Рабочий стол/Dev/KIP/StoreManagement/StoreManagement.csproj",
+        "projectUniqueName": "/Users/sokrat/Desktop/Dev/Stydy/Study/StoreManagement/StoreManagement.csproj",
         "projectName": "StoreManagement",
-        "projectPath": "/home/sokrat/Рабочий стол/Dev/KIP/StoreManagement/StoreManagement.csproj",
-        "packagesPath": "/home/sokrat/.nuget/packages/",
-        "outputPath": "/home/sokrat/Рабочий стол/Dev/KIP/StoreManagement/obj/",
+        "projectPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/StoreManagement/StoreManagement.csproj",
+        "packagesPath": "/Users/sokrat/.nuget/packages/",
+        "outputPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/StoreManagement/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/sokrat/.nuget/NuGet/NuGet.Config"
+          "/Users/sokrat/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/opt/homebrew/Cellar/dotnet/9.0.8/libexec/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,18 +55,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.8, 9.0.8]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/9.0.8/libexec/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

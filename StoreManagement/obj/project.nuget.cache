@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K6lRatAj3V4=",
+  "dgSpecHash": "zmFgfeX+kjg=",
   "success": true,
-  "projectFilePath": "/home/sokrat/Рабочий стол/Dev/KIP/StoreManagement/StoreManagement.csproj",
-  "expectedPackageFiles": [
-    "/home/sokrat/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.8/microsoft.aspnetcore.app.ref.9.0.8.nupkg.sha512"
-  ],
+  "projectFilePath": "/Users/sokrat/Desktop/Dev/Stydy/Study/StoreManagement/StoreManagement.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

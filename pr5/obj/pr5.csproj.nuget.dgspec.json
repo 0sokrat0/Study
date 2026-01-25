@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sokrat/Desktop/Dev/KIP/pr5/pr5.csproj": {}
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/pr5/pr5.csproj": {}
   },
   "projects": {
-    "/Users/sokrat/Desktop/Dev/KIP/pr5/pr5.csproj": {
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/pr5/pr5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sokrat/Desktop/Dev/KIP/pr5/pr5.csproj",
+        "projectUniqueName": "/Users/sokrat/Desktop/Dev/Stydy/Study/pr5/pr5.csproj",
         "projectName": "pr5",
-        "projectPath": "/Users/sokrat/Desktop/Dev/KIP/pr5/pr5.csproj",
+        "projectPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/pr5/pr5.csproj",
         "packagesPath": "/Users/sokrat/.nuget/packages/",
-        "outputPath": "/Users/sokrat/Desktop/Dev/KIP/pr5/obj/",
+        "outputPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/pr5/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sokrat/.nuget/NuGet/NuGet.Config"

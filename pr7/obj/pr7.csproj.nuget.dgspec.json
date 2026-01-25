@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sokrat/Desktop/Dev/KIP/pr7/pr7.csproj": {}
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/pr7/pr7.csproj": {}
   },
   "projects": {
-    "/Users/sokrat/Desktop/Dev/KIP/pr7/pr7.csproj": {
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/pr7/pr7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sokrat/Desktop/Dev/KIP/pr7/pr7.csproj",
+        "projectUniqueName": "/Users/sokrat/Desktop/Dev/Stydy/Study/pr7/pr7.csproj",
         "projectName": "pr7",
-        "projectPath": "/Users/sokrat/Desktop/Dev/KIP/pr7/pr7.csproj",
+        "projectPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/pr7/pr7.csproj",
         "packagesPath": "/Users/sokrat/.nuget/packages/",
-        "outputPath": "/Users/sokrat/Desktop/Dev/KIP/pr7/obj/",
+        "outputPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/pr7/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sokrat/.nuget/NuGet/NuGet.Config"

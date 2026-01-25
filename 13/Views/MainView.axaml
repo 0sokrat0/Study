@@ -1,0 +1,62 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:_13.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="_13.Views.MainView"
+             x:DataType="vm:MainWindowViewModel">
+    <TabControl>
+        <TabItem Header="Products">
+            <ScrollViewer>
+                <ItemsControl ItemsSource="{Binding Products}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Margin="10" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="vm:ProductViewModel">
+                            <Border BorderBrush="Gray" BorderThickness="1" Margin="10" Padding="10" CornerRadius="5">
+                                <StackPanel Spacing="5">
+                                    <Image Source="{Binding ImageUrl}" Width="150" Height="150" />
+                                    <TextBlock Text="{Binding Name}" FontWeight="Bold" HorizontalAlignment="Center" />
+                                    <TextBlock Text="{Binding Price, StringFormat={}{0:C}}" HorizontalAlignment="Center" />
+                                    <Button Content="Add to Cart" 
+                                            Command="{Binding $parent[TabControl].DataContext.AddToCartCommand}" 
+                                            CommandParameter="{Binding}" 
+                                            HorizontalAlignment="Stretch" 
+                                            Classes="accent" />
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </TabItem>
+        <TabItem Header="Shopping Cart">
+            <Grid ColumnDefinitions="*,Auto,Auto" RowDefinitions="Auto,*,Auto" Margin="10">
+                <TextBlock Text="Product" FontWeight="Bold" Grid.Row="0" Grid.Column="0" />
+                <TextBlock Text="Quantity" FontWeight="Bold" Grid.Row="0" Grid.Column="1" />
+                <TextBlock Text="Price" FontWeight="Bold" Grid.Row="0" Grid.Column="2" />
+
+                <ItemsControl ItemsSource="{Binding ShoppingCart.Items}" Grid.Row="1" Grid.ColumnSpan="3">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="vm:ProductViewModel">
+                            <Grid ColumnDefinitions="*,Auto,Auto" Margin="0,5">
+                                <TextBlock Text="{Binding Name}" Grid.Column="0" />
+                                <TextBlock Text="{Binding Price, StringFormat={}{0:C}}" Grid.Column="2" HorizontalAlignment="Right" />
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10">
+                    <TextBlock Text="Total: " FontWeight="Bold" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding ShoppingCart.TotalPrice, StringFormat={}{0:C}}" VerticalAlignment="Center" />
+                    <Button Content="Checkout" Command="{Binding CheckoutCommand}" Classes="accent" />
+                </StackPanel>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</UserControl>

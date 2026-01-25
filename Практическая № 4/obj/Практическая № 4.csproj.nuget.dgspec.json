@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sokrat/Desktop/Dev/KIP/Практическая № 4/Практическая № 4.csproj": {}
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/Практическая № 4/Практическая № 4.csproj": {}
   },
   "projects": {
-    "/Users/sokrat/Desktop/Dev/KIP/Практическая № 4/Практическая № 4.csproj": {
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/Практическая № 4/Практическая № 4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sokrat/Desktop/Dev/KIP/Практическая № 4/Практическая № 4.csproj",
+        "projectUniqueName": "/Users/sokrat/Desktop/Dev/Stydy/Study/Практическая № 4/Практическая № 4.csproj",
         "projectName": "Практическая № 4",
-        "projectPath": "/Users/sokrat/Desktop/Dev/KIP/Практическая № 4/Практическая № 4.csproj",
+        "projectPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/Практическая № 4/Практическая № 4.csproj",
         "packagesPath": "/Users/sokrat/.nuget/packages/",
-        "outputPath": "/Users/sokrat/Desktop/Dev/KIP/Практическая № 4/obj/",
+        "outputPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/Практическая № 4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sokrat/.nuget/NuGet/NuGet.Config"

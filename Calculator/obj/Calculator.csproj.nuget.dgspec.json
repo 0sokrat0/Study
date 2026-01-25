@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sokrat/Desktop/Dev/KIP/Calculator/Calculator.csproj": {}
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/Calculator/Calculator.csproj": {}
   },
   "projects": {
-    "/Users/sokrat/Desktop/Dev/KIP/Calculator/Calculator.csproj": {
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/Calculator/Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sokrat/Desktop/Dev/KIP/Calculator/Calculator.csproj",
+        "projectUniqueName": "/Users/sokrat/Desktop/Dev/Stydy/Study/Calculator/Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "/Users/sokrat/Desktop/Dev/KIP/Calculator/Calculator.csproj",
+        "projectPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/Calculator/Calculator.csproj",
         "packagesPath": "/Users/sokrat/.nuget/packages/",
-        "outputPath": "/Users/sokrat/Desktop/Dev/KIP/Calculator/obj/",
+        "outputPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/Calculator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sokrat/.nuget/NuGet/NuGet.Config"

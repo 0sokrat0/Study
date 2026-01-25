@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sokrat/Desktop/Dev/KIP/pr6/RoguelikeGame.csproj": {}
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/pr6/RoguelikeGame.csproj": {}
   },
   "projects": {
-    "/Users/sokrat/Desktop/Dev/KIP/pr6/RoguelikeGame.csproj": {
+    "/Users/sokrat/Desktop/Dev/Stydy/Study/pr6/RoguelikeGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sokrat/Desktop/Dev/KIP/pr6/RoguelikeGame.csproj",
+        "projectUniqueName": "/Users/sokrat/Desktop/Dev/Stydy/Study/pr6/RoguelikeGame.csproj",
         "projectName": "RoguelikeGame",
-        "projectPath": "/Users/sokrat/Desktop/Dev/KIP/pr6/RoguelikeGame.csproj",
+        "projectPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/pr6/RoguelikeGame.csproj",
         "packagesPath": "/Users/sokrat/.nuget/packages/",
-        "outputPath": "/Users/sokrat/Desktop/Dev/KIP/pr6/obj/",
+        "outputPath": "/Users/sokrat/Desktop/Dev/Stydy/Study/pr6/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sokrat/.nuget/NuGet/NuGet.Config"
