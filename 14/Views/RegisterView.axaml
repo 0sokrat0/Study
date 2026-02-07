@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Cinema.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800"
+             x:Class="Cinema.Views.RegisterView"
+             x:DataType="vm:RegisterViewModel">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="10" Width="300">
+        <TextBlock Text="Регистрация" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <TextBox Text="{Binding Email}" Watermark="Email"/>
+        <TextBox Text="{Binding Password}" Watermark="Пароль" PasswordChar="•"/>
+        <TextBox Text="{Binding Name}" Watermark="Имя"/>
+        <TextBlock Text="{Binding Error}" Foreground="Red" IsVisible="{Binding Error, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+        <Button Content="Зарегистрироваться" Command="{Binding RegisterCommand}" HorizontalAlignment="Stretch"/>
+        <Button Content="Уже есть аккаунт" Command="{Binding GoToLoginCommand}" HorizontalAlignment="Stretch"/>
+        <Button Content="Назад" Command="{Binding GoBackCommand}" HorizontalAlignment="Stretch"/>
+    </StackPanel>
+
+</UserControl>

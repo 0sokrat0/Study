@@ -1,0 +1,28 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Cinema.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800"
+             x:Class="Cinema.Views.BookingView"
+             x:DataType="vm:BookingViewModel">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20" Width="400">
+        <TextBlock Text="Оформление билета" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+        <StackPanel Spacing="10">
+            <TextBlock Text="{Binding Movie.Title, StringFormat='Фильм: {0}'}" FontSize="18"/>
+            <TextBlock Text="{Binding Hall.Name, StringFormat='Зал: {0}'}" FontSize="16"/>
+            <TextBlock Text="{Binding Session.DateTime, StringFormat='Дата и время: {0:dd.MM.yyyy HH:mm}'}" FontSize="16"/>
+            <TextBlock Text="{Binding Seat.Row, StringFormat='Ряд: {0}'}" FontSize="16"/>
+            <TextBlock Text="{Binding Seat.Number, StringFormat='Место: {0}'}" FontSize="16"/>
+            <TextBlock Text="{Binding Seat.Price, StringFormat='Цена: {0} руб.'}" FontSize="18" FontWeight="Bold"/>
+        </StackPanel>
+
+        <TextBlock Text="{Binding Error}" Foreground="Red" IsVisible="{Binding Error, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+
+        <Button Content="Подтвердить" Command="{Binding ConfirmCommand}" HorizontalAlignment="Stretch"/>
+        <Button Content="Назад" Command="{Binding GoBackCommand}" HorizontalAlignment="Stretch"/>
+    </StackPanel>
+
+</UserControl>

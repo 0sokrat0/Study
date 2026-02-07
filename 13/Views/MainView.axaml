@@ -19,13 +19,13 @@
                         <DataTemplate x:DataType="vm:ProductViewModel">
                             <Border BorderBrush="Gray" BorderThickness="1" Margin="10" Padding="10" CornerRadius="5">
                                 <StackPanel Spacing="5">
-                                    <Image Source="{Binding ImageUrl}" Width="150" Height="150" />
+                                    <Image Source="{Binding Image}" Width="150" Height="150" />
                                     <TextBlock Text="{Binding Name}" FontWeight="Bold" HorizontalAlignment="Center" />
                                     <TextBlock Text="{Binding Price, StringFormat={}{0:C}}" HorizontalAlignment="Center" />
-                                    <Button Content="Add to Cart" 
-                                            Command="{Binding $parent[TabControl].DataContext.AddToCartCommand}" 
-                                            CommandParameter="{Binding}" 
-                                            HorizontalAlignment="Stretch" 
+                                    <Button Content="Add to Cart"
+                                            Command="{Binding $parent[TabControl].DataContext.AddToCartCommand}"
+                                            CommandParameter="{Binding}"
+                                            HorizontalAlignment="Stretch"
                                             Classes="accent" />
                                 </StackPanel>
                             </Border>

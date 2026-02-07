@@ -1,0 +1,50 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Cinema.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800"
+             x:Class="Cinema.Views.MainView"
+             x:DataType="vm:MainViewModel">
+
+    <DockPanel Margin="20">
+        <StackPanel DockPanel.Dock="Top" Spacing="10" Margin="0,0,0,20">
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBox Text="{Binding SearchText}" Watermark="Поиск..." Width="300"/>
+                <ComboBox SelectedValue="{Binding SortBy}" Width="200">
+                    <ComboBoxItem Content="Без сортировки" Tag="none"/>
+                    <ComboBoxItem Content="По названию" Tag="title"/>
+                    <ComboBoxItem Content="По рейтингу" Tag="rating"/>
+                </ComboBox>
+                <Button Content="Профиль" Command="{Binding OpenProfileCommand}"/>
+            </StackPanel>
+        </StackPanel>
+
+        <ScrollViewer>
+            <ItemsControl ItemsSource="{Binding Movies}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="10" Padding="10" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Width="250">
+                            <StackPanel Spacing="5">
+                                <Image Source="{Binding ImageUrl}" Width="230" Height="345"/>
+                                <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="16"/>
+                                <TextBlock Text="{Binding Rating, StringFormat='Рейтинг: {0:F1}'}" />
+                                <TextBlock Text="{Binding ReleaseDate, StringFormat='Дата выхода: {0:dd.MM.yyyy}'}" />
+                                <TextBlock Text="{Binding AgeRating, StringFormat='Возраст: {0}+'}" />
+                                <Button Content="Подробнее"
+                                        Command="{Binding $parent[ItemsControl].((vm:MainViewModel)DataContext).SelectMovieCommand}"
+                                        CommandParameter="{Binding}"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </DockPanel>
+
+</UserControl>

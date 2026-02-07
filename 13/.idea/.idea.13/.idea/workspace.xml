@@ -7,315 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5123ed1c-0bf9-4ea9-8c33-631e84f2e784" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.Study.dir/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.Study.dir/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.Study.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.Study.dir/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/dataSources/c9cae063-2f70-4ba3-8831-3a9d1966b713.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/dataSources/c9cae063-2f70-4ba3-8831-3a9d1966b713/storage_v2/_src_/database/kip.0p4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/dataSources/c9cae063-2f70-4ba3-8831-3a9d1966b713/storage_v2/_src_/database/kip.0p4BAA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/dataSources/c9cae063-2f70-4ba3-8831-3a9d1966b713/storage_v2/_src_/database/kip.0p4BAA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/dataSources/c9cae063-2f70-4ba3-8831-3a9d1966b713/storage_v2/_src_/database/kip.0p4BAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/data_source_mapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.13/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MainWindow.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MainWindow.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Order.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/OrderItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repositories/OrderRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repositories/ProductRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/CheckoutViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/ProductViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/RelayCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/ShoppingCartViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/ViewModelBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/CheckoutView.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/CheckoutView.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/MainView.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/MainView.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/13.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/13.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/13.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/13.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/AsyncImageLoader.Avalonia.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Base.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Controls.ColorPicker.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Controls.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.DesignerSupport.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Desktop.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Diagnostics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Dialogs.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Fonts.Inter.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.FreeDesktop.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Markup.Xaml.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Markup.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Metal.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.MicroCom.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Native.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.OpenGL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Remote.Protocol.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Skia.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Themes.Fluent.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Themes.Simple.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Vulkan.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Win32.Automation.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.Win32.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.X11.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Avalonia.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/HarfBuzzSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/MicroCom.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Npgsql.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/SkiaSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/Tmds.DBus.Protocol.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-arm/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-arm/native/libSkiaSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-arm64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-arm64/native/libSkiaSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-loongarch64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-musl-arm/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-musl-arm64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-musl-loongarch64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-musl-riscv64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-musl-x64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-musl-x64/native/libSkiaSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-riscv64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-x64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-x64/native/libSkiaSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/linux-x86/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/osx/native/libAvaloniaNative.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/osx/native/libHarfBuzzSharp.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/osx/native/libSkiaSharp.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/win-arm64/native/av_libglesv2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/win-arm64/native/libHarfBuzzSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/win-arm64/native/libSkiaSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/win-x64/native/av_libglesv2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/win-x64/native/libHarfBuzzSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/win-x64/native/libSkiaSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/win-x86/native/av_libglesv2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/win-x86/native/libHarfBuzzSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net10.0/runtimes/win-x86/native/libSkiaSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/13.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/13.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/13.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/13.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Base.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Controls.ColorPicker.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Controls.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.DesignerSupport.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Desktop.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Diagnostics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Dialogs.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Fonts.Inter.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.FreeDesktop.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Markup.Xaml.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Markup.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Metal.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.MicroCom.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Native.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.OpenGL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Remote.Protocol.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Skia.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Themes.Fluent.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Themes.Simple.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Vulkan.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Win32.Automation.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.Win32.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.X11.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Avalonia.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/HarfBuzzSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/MicroCom.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Npgsql.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/SkiaSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Tmds.DBus.Protocol.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-arm/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-arm/native/libSkiaSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-arm64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-arm64/native/libSkiaSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-loongarch64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-musl-arm/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-musl-arm64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-musl-loongarch64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-musl-riscv64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-musl-x64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-musl-x64/native/libSkiaSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-riscv64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-x64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-x64/native/libSkiaSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/linux-x86/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/osx/native/libAvaloniaNative.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/osx/native/libHarfBuzzSharp.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/osx/native/libSkiaSharp.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/win-arm64/native/av_libglesv2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/win-arm64/native/libHarfBuzzSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/win-arm64/native/libSkiaSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/win-x64/native/av_libglesv2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/win-x64/native/libHarfBuzzSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/win-x64/native/libSkiaSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/win-x86/native/av_libglesv2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/win-x86/native/libHarfBuzzSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net9.0/runtimes/win-x86/native/libSkiaSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databese/Database.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/13.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/13.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/13.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.csproj.Up2Date" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/13.sourcelink.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Avalonia/references" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Avalonia/resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/ref/13.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/refint/13.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.csproj.Up2Date" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/13.sourcelink.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Avalonia/references" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Avalonia/resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/ref/13.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net9.0/refint/13.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calculator/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calculator/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calculator/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StoreManagement/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StoreManagement/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StoreManagement/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr3/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr3/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr3/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr5/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr5/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr5/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr6/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr6/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr6/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr7/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr7/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr7/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr8/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr8/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pr8/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Практическая № 4/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Практическая № 4/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Практическая № 4/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/obj/Calculator.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/obj/Calculator.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/obj/Calculator.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/obj/Calculator.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Calculator.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Calculator.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Calculator.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Calculator.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Calculator.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Calculator.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Calculator.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/obj/Debug/net9.0/Calculator.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoreManagement/obj/Debug/net9.0/StoreManagement.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../StoreManagement/obj/Debug/net9.0/StoreManagement.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoreManagement/obj/Debug/net9.0/StoreManagement.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../StoreManagement/obj/Debug/net9.0/StoreManagement.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoreManagement/obj/Debug/net9.0/StoreManagement.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../StoreManagement/obj/Debug/net9.0/StoreManagement.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoreManagement/obj/Debug/net9.0/StoreManagement.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../StoreManagement/obj/Debug/net9.0/StoreManagement.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoreManagement/obj/StoreManagement.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../StoreManagement/obj/StoreManagement.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoreManagement/obj/StoreManagement.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../StoreManagement/obj/StoreManagement.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoreManagement/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../StoreManagement/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoreManagement/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../StoreManagement/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/apphost" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/pr3.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/pr3.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/pr3.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/pr3.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/pr3.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/pr3.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/pr3.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr3/obj/Debug/net9.0/pr3.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr3/obj/pr3.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr3/obj/pr3.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr3/obj/pr3.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../pr3/obj/pr3.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr3/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr3/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr3/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr3/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr5/obj/Debug/net9.0/pr5.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../pr5/obj/Debug/net9.0/pr5.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr5/obj/Debug/net9.0/pr5.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr5/obj/Debug/net9.0/pr5.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr5/obj/Debug/net9.0/pr5.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../pr5/obj/Debug/net9.0/pr5.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr5/obj/Debug/net9.0/pr5.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr5/obj/Debug/net9.0/pr5.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr5/obj/pr5.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr5/obj/pr5.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr5/obj/pr5.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../pr5/obj/pr5.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr5/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr5/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr5/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr5/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr6/obj/Debug/net9.0/RoguelikeGame.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../pr6/obj/Debug/net9.0/RoguelikeGame.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr6/obj/Debug/net9.0/RoguelikeGame.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr6/obj/Debug/net9.0/RoguelikeGame.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr6/obj/Debug/net9.0/RoguelikeGame.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../pr6/obj/Debug/net9.0/RoguelikeGame.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr6/obj/Debug/net9.0/RoguelikeGame.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr6/obj/Debug/net9.0/RoguelikeGame.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr6/obj/RoguelikeGame.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr6/obj/RoguelikeGame.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr6/obj/RoguelikeGame.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../pr6/obj/RoguelikeGame.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr6/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr6/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr6/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr6/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/pr7.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/pr7.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/pr7.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/pr7.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/pr7.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/pr7.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/pr7.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr7/obj/Debug/net9.0/pr7.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr7/obj/pr7.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr7/obj/pr7.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr7/obj/pr7.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../pr7/obj/pr7.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr7/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr7/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr7/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr7/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/pr8.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/pr8.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/pr8.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/pr8.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/pr8.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/pr8.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/pr8.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr8/obj/Debug/net9.0/pr8.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr8/obj/pr8.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr8/obj/pr8.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr8/obj/pr8.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../pr8/obj/pr8.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr8/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pr8/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pr8/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../pr8/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Практическая № 4/obj/Debug/net9.0/Практическая № 4.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Практическая № 4/obj/Debug/net9.0/Практическая № 4.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Практическая № 4/obj/Debug/net9.0/Практическая № 4.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Практическая № 4/obj/Debug/net9.0/Практическая № 4.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Практическая № 4/obj/Debug/net9.0/Практическая № 4.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../Практическая № 4/obj/Debug/net9.0/Практическая № 4.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Практическая № 4/obj/Debug/net9.0/Практическая № 4.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Практическая № 4/obj/Debug/net9.0/Практическая № 4.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Практическая № 4/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Практическая № 4/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Практическая № 4/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Практическая № 4/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Практическая № 4/obj/Практическая № 4.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Практическая № 4/obj/Практическая № 4.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Практическая № 4/obj/Практическая № 4.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Практическая № 4/obj/Практическая № 4.csproj.nuget.g.props" afterDir="false" />
-    </list>
+    <list default="true" id="5123ed1c-0bf9-4ea9-8c33-631e84f2e784" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -436,8 +128,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769357097000</updated>
-      <workItem from="1769357098020" duration="5727000" />
+      <workItem from="1769357098020" duration="5777000" />
     </task>
+    <task id="LOCAL-00001" summary="Add 13pr">
+      <option name="closed" value="true" />
+      <created>1769365024298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769365024298</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,6 +148,8 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add 13pr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add 13pr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

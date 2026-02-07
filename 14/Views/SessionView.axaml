@@ -1,0 +1,54 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Cinema.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800"
+             x:Class="Cinema.Views.SessionView"
+             x:DataType="vm:SessionViewModel">
+
+    <DockPanel Margin="20">
+        <StackPanel DockPanel.Dock="Top" Spacing="10" Margin="0,0,0,20">
+            <Button Content="← Назад" Command="{Binding GoBackCommand}" Width="100" HorizontalAlignment="Left"/>
+            <CheckBox Content="Скрыть занятые места" IsChecked="{Binding HideBooked}"/>
+            <StackPanel Spacing="5" IsVisible="{Binding SelectedSeat, Converter={x:Static ObjectConverters.IsNotNull}}">
+                <TextBlock Text="{Binding SelectedSeat.Seat.Row, StringFormat='Ряд: {0}'}" FontSize="16" FontWeight="Bold"/>
+                <TextBlock Text="{Binding SelectedSeat.Seat.Number, StringFormat='Место: {0}'}" FontSize="16" FontWeight="Bold"/>
+                <TextBlock Text="{Binding SelectedSeat.Seat.Price, StringFormat='Цена: {0} руб.'}" FontSize="16" FontWeight="Bold"/>
+            </StackPanel>
+            <Button Content="Оформить билет"
+                    Command="{Binding BookTicketCommand}"
+                    IsEnabled="{Binding SelectedSeat, Converter={x:Static ObjectConverters.IsNotNull}}"
+                    Width="200"/>
+        </StackPanel>
+
+        <ScrollViewer>
+            <ItemsControl ItemsSource="{Binding Seats}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Margin="2" Width="50" Height="50"
+                                Content="{Binding Seat.Number}"
+                                Command="{Binding $parent[ItemsControl].((vm:SessionViewModel)DataContext).SelectSeatCommand}"
+                                CommandParameter="{Binding}"
+                                IsEnabled="{Binding !IsBooked}">
+                            <Button.Styles>
+                                <Style Selector="Button">
+                                    <Setter Property="Background" Value="LightGreen"/>
+                                </Style>
+                                <Style Selector="Button:disabled">
+                                    <Setter Property="Background" Value="LightGray"/>
+                                </Style>
+                            </Button.Styles>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </DockPanel>
+
+</UserControl>
