@@ -1,0 +1,178 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:PCBuilder.ViewModels"
+             x:Class="PCBuilder.Views.SavedBuildsView"
+             x:DataType="vm:SavedBuildsViewModel">
+
+    <UserControl.Styles>
+        <Style Selector="ListBoxItem">
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+        <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+            <Setter Property="Background" Value="#2D2D4A"/>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid ColumnDefinitions="320,*" Background="#12121E">
+        <DockPanel Grid.Column="0" Background="#1A1A2E">
+            <Border DockPanel.Dock="Top"
+                    Background="#1E1E30"
+                    Padding="14,12"
+                    BorderThickness="0,0,0,1"
+                    BorderBrush="#3A3A55">
+                <Grid ColumnDefinitions="*,Auto">
+                    <TextBlock Grid.Column="0"
+                               Text="Сохранённые сборки"
+                               Foreground="#7C6AF5"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"/>
+                    <Button Grid.Column="1"
+                            Content="↻ Обновить"
+                            Background="Transparent"
+                            Foreground="#8888AA"
+                            BorderThickness="0"
+                            Padding="6,4"
+                            FontSize="12"
+                            Click="OnRefreshClick"/>
+                </Grid>
+            </Border>
+
+            <ProgressBar DockPanel.Dock="Top"
+                         IsIndeterminate="True"
+                         IsVisible="{Binding IsLoading}"
+                         Height="3"/>
+
+            <TextBlock DockPanel.Dock="Top"
+                       Text="Нет сохранённых сборок"
+                       Foreground="#6666AA"
+                       HorizontalAlignment="Center"
+                       Margin="0,40,0,0"
+                       FontSize="13"
+                       IsVisible="{Binding !Assemblies.Count}"/>
+
+            <ListBox ItemsSource="{Binding Assemblies}"
+                     SelectedItem="{Binding SelectedAssembly}"
+                     Background="Transparent"
+                     BorderThickness="0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate x:DataType="vm:AssemblyViewModel">
+                        <Border Padding="12,10"
+                                BorderThickness="0,0,0,1"
+                                BorderBrush="#2D2D45">
+                            <Grid ColumnDefinitions="*,Auto">
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock Text="{Binding Name}"
+                                               Foreground="White"
+                                               FontWeight="SemiBold"
+                                               FontSize="14"
+                                               TextTrimming="CharacterEllipsis"/>
+                                    <TextBlock Text="{Binding Author, StringFormat=Автор: {0}}"
+                                               Foreground="#8888AA"
+                                               FontSize="11"
+                                               Margin="0,2,0,0"/>
+                                    <TextBlock Text="{Binding PartsCount}"
+                                               Foreground="#6666AA"
+                                               FontSize="11"/>
+                                </StackPanel>
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding TotalPriceDisplay}"
+                                           Foreground="#7C6AF5"
+                                           FontWeight="Bold"
+                                           FontSize="13"
+                                           VerticalAlignment="Center"
+                                           Margin="8,0,0,0"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </DockPanel>
+
+        <DockPanel Grid.Column="1">
+            <Grid IsVisible="{Binding SelectedAssembly, Converter={x:Static ObjectConverters.IsNull}}">
+                <TextBlock Text="Выберите сборку для просмотра"
+                           Foreground="#6666AA"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="15"/>
+            </Grid>
+
+            <DockPanel IsVisible="{Binding SelectedAssembly, Converter={x:Static ObjectConverters.IsNotNull}}">
+                <Border DockPanel.Dock="Top"
+                        Background="#1E1E30"
+                        Padding="16,12"
+                        BorderThickness="0,0,0,1"
+                        BorderBrush="#3A3A55">
+                    <Grid ColumnDefinitions="*,Auto">
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="{Binding SelectedAssembly.Name}"
+                                       Foreground="White"
+                                       FontSize="18"
+                                       FontWeight="Bold"/>
+                            <TextBlock Text="{Binding SelectedAssembly.Author, StringFormat=Автор: {0}}"
+                                       Foreground="#8888AA"
+                                       FontSize="12"
+                                       Margin="0,2,0,0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Right">
+                            <TextBlock Text="{Binding SelectedAssembly.TotalPriceDisplay}"
+                                       Foreground="#7C6AF5"
+                                       FontSize="22"
+                                       FontWeight="Bold"
+                                       HorizontalAlignment="Right"/>
+                            <Button Content="Удалить сборку"
+                                    Background="#3D2020"
+                                    Foreground="#FF8888"
+                                    CornerRadius="6"
+                                    Padding="10,5"
+                                    FontSize="12"
+                                    Margin="0,4,0,0"
+                                    Click="OnDeleteClick"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <ScrollViewer Padding="16" Background="#12121E">
+                    <ItemsControl ItemsSource="{Binding SelectedAssembly.Parts}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="vm:PartViewModel">
+                                <Border Background="#1E1E30"
+                                        CornerRadius="6"
+                                        Padding="14,10"
+                                        Margin="0,0,0,8"
+                                        BorderThickness="1"
+                                        BorderBrush="#3A3A55">
+                                    <Grid ColumnDefinitions="*,Auto,Auto">
+                                        <StackPanel Grid.Column="0">
+                                            <TextBlock Text="{Binding PartType}"
+                                                       Foreground="#8888AA"
+                                                       FontSize="11"
+                                                       FontWeight="SemiBold"/>
+                                            <TextBlock Text="{Binding Name}"
+                                                       Foreground="White"
+                                                       FontSize="14"
+                                                       TextTrimming="CharacterEllipsis"/>
+                                        </StackPanel>
+                                        <TextBlock Grid.Column="1"
+                                                   Text="{Binding ManufacturerName}"
+                                                   Foreground="#6666AA"
+                                                   FontSize="12"
+                                                   VerticalAlignment="Center"
+                                                   Margin="12,0,16,0"/>
+                                        <TextBlock Grid.Column="2"
+                                                   Text="{Binding PriceDisplay}"
+                                                   Foreground="#7C6AF5"
+                                                   FontWeight="Bold"
+                                                   FontSize="14"
+                                                   VerticalAlignment="Center"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</UserControl>

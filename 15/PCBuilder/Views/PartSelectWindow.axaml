@@ -1,0 +1,135 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:PCBuilder.ViewModels"
+        x:Class="PCBuilder.Views.PartSelectWindow"
+        Title="Выбор комплектующего"
+        Width="750" Height="580"
+        MinWidth="600" MinHeight="420"
+        WindowStartupLocation="CenterOwner"
+        CanResize="True">
+
+    <Window.Styles>
+        <Style Selector="ListBoxItem">
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+            <Setter Property="Background" Value="#2D2D4A"/>
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="#2D2D40"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#5555AA"/>
+            <Setter Property="CornerRadius" Value="6"/>
+        </Style>
+        <Style Selector="ComboBox">
+            <Setter Property="Background" Value="#2D2D40"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#5555AA"/>
+        </Style>
+    </Window.Styles>
+
+    <DockPanel Background="#12121E">
+        <Border DockPanel.Dock="Top" Background="#1E1E30" Padding="16,12" BorderThickness="0,0,0,1" BorderBrush="#3A3A55">
+            <Grid ColumnDefinitions="*,Auto">
+                <TextBlock Grid.Column="0"
+                           x:Name="TitleLabel"
+                           Text="Выбор комплектующего"
+                           Foreground="White"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"/>
+                <Button Grid.Column="1"
+                        Content="✕"
+                        Background="Transparent"
+                        Foreground="#8888AA"
+                        BorderThickness="0"
+                        Padding="8"
+                        Click="OnClose"/>
+            </Grid>
+        </Border>
+
+        <Border DockPanel.Dock="Top" Background="#1A1A2E" Padding="12,10" BorderThickness="0,0,0,1" BorderBrush="#3A3A55">
+            <Grid ColumnDefinitions="*,Auto,12,200">
+                <TextBox Grid.Column="0"
+                         x:Name="SearchBox"
+                         Watermark="Поиск по названию..."
+                         TextChanged="OnSearchChanged"/>
+                <TextBlock Grid.Column="1"
+                           Text="Производитель:"
+                           Foreground="#AAAACC"
+                           VerticalAlignment="Center"
+                           Margin="12,0,8,0"
+                           FontSize="13"/>
+                <ComboBox Grid.Column="3"
+                          x:Name="ManufacturerFilter"
+                          SelectionChanged="OnManufacturerChanged"
+                          HorizontalAlignment="Stretch"/>
+            </Grid>
+        </Border>
+
+        <Border DockPanel.Dock="Bottom" Background="#1E1E30" Padding="16,10" BorderThickness="0,1,0,0" BorderBrush="#3A3A55">
+            <Grid ColumnDefinitions="*,Auto,Auto">
+                <TextBlock Grid.Column="0"
+                           x:Name="CountLabel"
+                           Foreground="#8888AA"
+                           VerticalAlignment="Center"
+                           FontSize="12"/>
+                <Button Grid.Column="1"
+                        Content="Отмена"
+                        Padding="16,8"
+                        CornerRadius="6"
+                        Margin="0,0,8,0"
+                        Click="OnClose"/>
+                <Button Grid.Column="2"
+                        Content="Выбрать"
+                        Padding="16,8"
+                        CornerRadius="6"
+                        Background="#7C6AF5"
+                        Foreground="White"
+                        Click="OnSelect"/>
+            </Grid>
+        </Border>
+
+        <ListBox x:Name="PartsList"
+                 Background="Transparent"
+                 BorderThickness="0"
+                 SelectionMode="Single"
+                 DoubleTapped="OnDoubleTap">
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="vm:PartListItem">
+                    <Border Padding="14,10"
+                            BorderThickness="0,0,0,1"
+                            BorderBrush="#2A2A40">
+                        <Grid ColumnDefinitions="*,Auto,Auto" RowDefinitions="Auto,Auto">
+                            <TextBlock Grid.Row="0" Grid.Column="0"
+                                       Text="{Binding Name}"
+                                       Foreground="White"
+                                       FontWeight="SemiBold"
+                                       FontSize="14"
+                                       TextTrimming="CharacterEllipsis"/>
+                            <TextBlock Grid.Row="1" Grid.Column="0"
+                                       Text="{Binding Specs}"
+                                       Foreground="#8888AA"
+                                       FontSize="11"
+                                       TextTrimming="CharacterEllipsis"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1"
+                                       Grid.RowSpan="2"
+                                       Text="{Binding ManufacturerName}"
+                                       Foreground="#6666AA"
+                                       FontSize="12"
+                                       VerticalAlignment="Center"
+                                       Margin="12,0,16,0"/>
+                            <TextBlock Grid.Row="0" Grid.Column="2"
+                                       Grid.RowSpan="2"
+                                       Text="{Binding PriceDisplay}"
+                                       Foreground="#7C6AF5"
+                                       FontWeight="Bold"
+                                       FontSize="15"
+                                       VerticalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </DockPanel>
+</Window>

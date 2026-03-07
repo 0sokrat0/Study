@@ -1,0 +1,202 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:PCBuilder.ViewModels"
+             x:Class="PCBuilder.Views.BuilderView"
+             x:DataType="vm:BuilderViewModel">
+
+    <UserControl.Resources>
+        <vm:BoolToColorConverter x:Key="CompatColorConverter"/>
+    </UserControl.Resources>
+
+    <UserControl.Styles>
+        <Style Selector="Button.CategoryBtn">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Padding" Value="14,12"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="BorderBrush" Value="#3A3A55"/>
+            <Setter Property="CornerRadius" Value="0"/>
+            <Setter Property="Foreground" Value="#CCCCEE"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+        <Style Selector="Button.CategoryBtn:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#2D2D4A"/>
+        </Style>
+        <Style Selector="Button.ActionBtn">
+            <Setter Property="Padding" Value="16,8"/>
+            <Setter Property="CornerRadius" Value="6"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid ColumnDefinitions="280,*">
+        <Border Grid.Column="0" Background="#1A1A2E" BorderThickness="0,0,1,0" BorderBrush="#3A3A55">
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Top"
+                           Text="Комплектующие"
+                           Foreground="#7C6AF5"
+                           FontWeight="SemiBold"
+                           FontSize="13"
+                           Padding="14,12,14,8"/>
+                <ScrollViewer>
+                    <ItemsControl ItemsSource="{Binding Components}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="vm:SelectedComponent">
+                                <Button Classes="CategoryBtn"
+                                        Tag="{Binding Category}"
+                                        Click="OnCategoryClick">
+                                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
+                                        <TextBlock Grid.Row="0" Grid.Column="0"
+                                                   Text="{Binding CategoryRu}"
+                                                   FontWeight="SemiBold"
+                                                   Foreground="#EEEEFF"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="0"
+                                                   Text="{Binding DisplayName}"
+                                                   FontSize="11"
+                                                   Foreground="#8888AA"
+                                                   TextTrimming="CharacterEllipsis"/>
+                                        <TextBlock Grid.Row="0" Grid.Column="1"
+                                                   Grid.RowSpan="2"
+                                                   Text="{Binding PriceDisplay}"
+                                                   Foreground="#7C6AF5"
+                                                   FontWeight="SemiBold"
+                                                   VerticalAlignment="Center"
+                                                   Margin="8,0,0,0"/>
+                                    </Grid>
+                                </Button>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </DockPanel>
+        </Border>
+
+        <DockPanel Grid.Column="1" Background="#12121E">
+            <Border DockPanel.Dock="Top" Background="#1E1E30" Padding="16,10" BorderThickness="0,0,0,1" BorderBrush="#3A3A55">
+                <Grid ColumnDefinitions="*,Auto,Auto">
+                    <TextBlock Grid.Column="0"
+                               Text="Текущая сборка"
+                               Foreground="White"
+                               FontSize="16"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"/>
+                    <Button Grid.Column="1"
+                            Content="Очистить"
+                            Classes="ActionBtn"
+                            Background="#3D2020"
+                            Foreground="#FF8888"
+                            Margin="0,0,8,0"
+                            Click="OnClearClick"/>
+                    <Button Grid.Column="2"
+                            Content="Сохранить сборку"
+                            Classes="ActionBtn"
+                            Background="#7C6AF5"
+                            Foreground="White"
+                            Click="OnSaveClick"/>
+                </Grid>
+            </Border>
+
+            <Border DockPanel.Dock="Bottom"
+                    Background="#1E1E30"
+                    Padding="16,10"
+                    BorderThickness="0,1,0,0"
+                    BorderBrush="#3A3A55">
+                <Grid ColumnDefinitions="Auto,*,Auto">
+                    <TextBlock Grid.Column="0"
+                               Text="{Binding StatusIcon}"
+                               Foreground="{Binding IsCompatible, Converter={StaticResource CompatColorConverter}}"
+                               FontSize="16"
+                               VerticalAlignment="Top"
+                               Margin="0,0,8,0"
+                               IsVisible="{Binding CompatibilityStatus, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+                    <TextBlock Grid.Column="1"
+                               Text="{Binding CompatibilityStatus}"
+                               Foreground="{Binding IsCompatible, Converter={StaticResource CompatColorConverter}}"
+                               TextWrapping="Wrap"
+                               FontSize="12"
+                               VerticalAlignment="Center"
+                               IsVisible="{Binding CompatibilityStatus, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+                    <TextBlock Grid.Column="1"
+                               Text="Выберите комплектующие слева, чтобы начать сборку"
+                               Foreground="#6666AA"
+                               VerticalAlignment="Center"
+                               FontSize="13"
+                               IsVisible="{Binding CompatibilityStatus, Converter={x:Static StringConverters.IsNullOrEmpty}}"/>
+                    <StackPanel Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Right" Margin="16,0,0,0">
+                        <TextBlock Text="Итоговая цена"
+                                   Foreground="#8888AA"
+                                   FontSize="11"
+                                   HorizontalAlignment="Right"/>
+                        <TextBlock Text="{Binding TotalPrice, StringFormat={}{0:N0} ₽}"
+                                   Foreground="#7C6AF5"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Right"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <ScrollViewer Padding="16">
+                <ItemsControl ItemsSource="{Binding Components}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="vm:SelectedComponent">
+                            <Border Background="#1E1E30"
+                                    CornerRadius="8"
+                                    Padding="14,12"
+                                    Margin="0,0,0,8"
+                                    BorderThickness="1"
+                                    BorderBrush="#3A3A55">
+                                <Grid ColumnDefinitions="Auto,*,Auto,Auto" RowDefinitions="Auto,Auto">
+                                    <Border Grid.Column="0" Grid.RowSpan="2"
+                                            Width="52" Height="36"
+                                            CornerRadius="6"
+                                            Background="#2D2D4A"
+                                            Margin="0,0,12,0"
+                                            VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding CategoryIcon}"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="11"
+                                                   FontWeight="Bold"
+                                                   Foreground="#7C6AF5"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Grid.Column="1"
+                                               Text="{Binding CategoryRu}"
+                                               Foreground="#8888AA"
+                                               FontSize="11"
+                                               FontWeight="SemiBold"/>
+                                    <TextBlock Grid.Row="1" Grid.Column="1"
+                                               Text="{Binding DisplayName}"
+                                               Foreground="White"
+                                               FontSize="14"
+                                               FontWeight="SemiBold"
+                                               TextTrimming="CharacterEllipsis"/>
+                                    <TextBlock Grid.Row="0" Grid.Column="2"
+                                               Grid.RowSpan="2"
+                                               Text="{Binding PriceDisplay}"
+                                               Foreground="#7C6AF5"
+                                               FontSize="16"
+                                               FontWeight="Bold"
+                                               VerticalAlignment="Center"
+                                               Margin="12,0,12,0"/>
+                                    <Button Grid.Row="0" Grid.Column="3"
+                                            Grid.RowSpan="2"
+                                            Content="✕"
+                                            IsVisible="{Binding HasPart}"
+                                            Background="Transparent"
+                                            Foreground="#FF6666"
+                                            Padding="8"
+                                            BorderThickness="0"
+                                            VerticalAlignment="Center"
+                                            Tag="{Binding Category}"
+                                            Click="OnRemoveComponent"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </DockPanel>
+    </Grid>
+</UserControl>

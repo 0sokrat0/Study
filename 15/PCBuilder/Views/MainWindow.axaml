@@ -1,0 +1,52 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:PCBuilder.ViewModels"
+        x:Class="PCBuilder.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="PC Builder — Собери сам"
+        Width="1100" Height="720"
+        MinWidth="800" MinHeight="560"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Styles>
+        <Style Selector="Button.TabBtn">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#AAAACC"/>
+            <Setter Property="Padding" Value="18,10"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="0"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style Selector="Button.TabBtn:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#3D3D55"/>
+        </Style>
+        <Style Selector="Button.TabBtn.Active">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Window.Styles>
+
+    <DockPanel>
+        <Border DockPanel.Dock="Top" Background="#1E1E2E" Padding="16,10">
+            <TextBlock Text="PC Builder — Собери сам"
+                       Foreground="White"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"/>
+        </Border>
+
+        <Border DockPanel.Dock="Top" Background="#2D2D3F" Padding="4,0">
+            <StackPanel Orientation="Horizontal" x:Name="TabBar">
+                <Button x:Name="TabBuilder"
+                        Content="  Сборка  "
+                        Classes="TabBtn Active"
+                        Click="OnBuilderTabClick" />
+                <Button x:Name="TabSaved"
+                        Content="  Сохранённые сборки  "
+                        Classes="TabBtn"
+                        Click="OnSavedTabClick" />
+            </StackPanel>
+        </Border>
+
+        <ContentControl x:Name="PageContent" />
+    </DockPanel>
+</Window>
