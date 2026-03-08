@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="RoguelikeGame.Views.MainMenuView">
+    <Panel>
+        <Panel.Background>
+            <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
+                <GradientStop Color="#12121E" Offset="0"/>
+                <GradientStop Color="#1E1E2E" Offset="0.5"/>
+                <GradientStop Color="#0A0A14" Offset="1"/>
+            </LinearGradientBrush>
+        </Panel.Background>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="40">
+            <TextBlock Text="⚔ ROGUELIKE ⚔"
+                       FontSize="56"
+                       FontWeight="Black"
+                       Foreground="#C8A84B"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,16"/>
+
+            <TextBlock Text="Подземелье ждёт тебя, герой..."
+                       FontSize="20"
+                       Foreground="#888899"
+                       HorizontalAlignment="Center"
+                       FontStyle="Italic"
+                       Margin="0,0,0,60"/>
+
+            <Button Content="Начать игру"
+                    HorizontalAlignment="Center"
+                    Background="#C8A84B"
+                    Foreground="#1A1A1A"
+                    FontSize="18"
+                    FontWeight="Bold"
+                    Padding="40,12"
+                    CornerRadius="8"
+                    BorderThickness="0"
+                    Click="OnStartGameClick"/>
+
+            <TextBlock Text="v1.0  |  Roguelike Avalonia"
+                       FontSize="12"
+                       Foreground="#444455"
+                       HorizontalAlignment="Center"
+                       Margin="0,40,0,0"/>
+        </StackPanel>
+    </Panel>
+</UserControl>

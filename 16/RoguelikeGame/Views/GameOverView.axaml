@@ -1,0 +1,39 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="RoguelikeGame.Views.GameOverView">
+    <Panel>
+        <Panel.Background>
+            <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
+                <GradientStop Color="#0A0000" Offset="0"/>
+                <GradientStop Color="#1A0A0A" Offset="0.5"/>
+                <GradientStop Color="#050005" Offset="1"/>
+            </LinearGradientBrush>
+        </Panel.Background>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="40">
+            <TextBlock Text="💀 ВЫ ПОГИБЛИ 💀"
+                       FontSize="52"
+                       FontWeight="Black"
+                       Foreground="#CC2222"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <TextBlock x:Name="FloorReachedText"
+                       FontSize="24"
+                       Foreground="#C8A84B"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,50"/>
+
+            <Button Content="Начать заново"
+                    HorizontalAlignment="Center"
+                    Background="#8B0000"
+                    Foreground="White"
+                    FontSize="18"
+                    FontWeight="Bold"
+                    Padding="40,12"
+                    CornerRadius="8"
+                    BorderThickness="0"
+                    Click="OnRestartClick"/>
+        </StackPanel>
+    </Panel>
+</UserControl>

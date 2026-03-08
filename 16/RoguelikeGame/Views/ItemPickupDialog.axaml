@@ -1,0 +1,94 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="RoguelikeGame.Views.ItemPickupDialog"
+        Title="Найден предмет"
+        Width="480" Height="300"
+        WindowStartupLocation="CenterOwner"
+        CanResize="False"
+        Background="#1A1A2E">
+    <Grid Margin="28">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="Найден новый предмет!"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Foreground="#C8A84B"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="#252535" CornerRadius="6" Padding="14">
+                <StackPanel>
+                    <TextBlock Text="Текущий"
+                               FontSize="12"
+                               Foreground="#888899"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,6"/>
+                    <TextBlock x:Name="OldItemText"
+                               FontSize="15"
+                               Foreground="White"
+                               TextWrapping="Wrap"
+                               HorizontalAlignment="Center"
+                               TextAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+            <TextBlock Grid.Column="1"
+                       Text="→"
+                       FontSize="22"
+                       Foreground="#C8A84B"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+            <Border Grid.Column="2" Background="#252535" CornerRadius="6" Padding="14"
+                    BorderBrush="#C8A84B" BorderThickness="1.5">
+                <StackPanel>
+                    <TextBlock Text="Новый"
+                               FontSize="12"
+                               Foreground="#C8A84B"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,6"/>
+                    <TextBlock x:Name="NewItemText"
+                               FontSize="15"
+                               Foreground="White"
+                               TextWrapping="Wrap"
+                               HorizontalAlignment="Center"
+                               TextAlignment="Center"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="Взять"
+                    Background="#2D6A2D"
+                    Foreground="White"
+                    FontSize="15"
+                    FontWeight="Bold"
+                    Padding="28,10"
+                    CornerRadius="6"
+                    BorderThickness="0"
+                    Margin="0,0,16,0"
+                    Click="OnTakeClick"/>
+            <Button Content="Выбросить"
+                    Background="#6A2D2D"
+                    Foreground="White"
+                    FontSize="15"
+                    FontWeight="Bold"
+                    Padding="28,10"
+                    CornerRadius="6"
+                    BorderThickness="0"
+                    Click="OnDiscardClick"/>
+        </StackPanel>
+    </Grid>
+</Window>

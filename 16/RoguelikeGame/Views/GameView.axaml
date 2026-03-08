@@ -1,0 +1,270 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="RoguelikeGame.Views.GameView"
+             Background="#1A1A1A">
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="190"/>
+        </Grid.RowDefinitions>
+
+        <!-- Строка 0: Название игры / событие этажа -->
+        <Border Grid.Row="0" Background="#252535" CornerRadius="8" Padding="12,10" Margin="0,0,0,6">
+            <TextBlock x:Name="EventTitleText"
+                       Text="Загрузка..."
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Foreground="#C8A84B"
+                       HorizontalAlignment="Center"/>
+        </Border>
+
+        <!-- Строка 1: Этаж | Здоровье -->
+        <Border Grid.Row="1" Background="#252535" CornerRadius="8" Padding="12,8" Margin="0,0,0,6">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"
+                           x:Name="FloorText"
+                           Text="Этаж: 1"
+                           FontSize="14"
+                           FontWeight="Bold"
+                           Foreground="#C8A84B"
+                           VerticalAlignment="Center"/>
+
+                <StackPanel Grid.Column="2"
+                            Orientation="Horizontal"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Здоровье: "
+                               FontSize="12"
+                               Foreground="#888899"
+                               VerticalAlignment="Center"
+                               Margin="0,0,6,0"/>
+                    <Grid Width="220" Height="14" Margin="0,0,8,0">
+                        <Border Background="#1A3A1A" CornerRadius="4"/>
+                        <Border x:Name="PlayerHpBar"
+                                Background="#22CC22"
+                                CornerRadius="4"
+                                HorizontalAlignment="Left"
+                                Width="220"/>
+                    </Grid>
+                    <TextBlock x:Name="PlayerHpText"
+                               Text="100 / 100"
+                               FontSize="13"
+                               Foreground="White"
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Строка 2: Основная игровая зона -->
+        <Border Grid.Row="2" Background="#252535" CornerRadius="8" Padding="12" Margin="0,0,0,6">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Враги / Сундук -->
+                <Grid Grid.Row="0">
+                    <ItemsControl x:Name="EnemyCardsPanel" VerticalAlignment="Center">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Rows="1"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Background="#1E1E2E" CornerRadius="8" Margin="6" Padding="10">
+                                    <StackPanel HorizontalAlignment="Center">
+                                        <TextBlock Text="{Binding EnemyEmoji}"
+                                                   FontSize="64"
+                                                   HorizontalAlignment="Center"
+                                                   Margin="0,0,0,8"/>
+                                        <TextBlock Text="{Binding Name}"
+                                                   FontSize="14"
+                                                   FontWeight="Bold"
+                                                   Foreground="White"
+                                                   HorizontalAlignment="Center"
+                                                   Margin="0,0,0,6"/>
+                                        <Grid Width="100" Height="14" Margin="0,0,0,4">
+                                            <Border Background="#3A0000" CornerRadius="4"/>
+                                            <Border Background="#CC2222"
+                                                    CornerRadius="4"
+                                                    HorizontalAlignment="Left"
+                                                    Width="{Binding HpBarWidth}"/>
+                                        </Grid>
+                                        <TextBlock Text="{Binding HpText}"
+                                                   FontSize="11"
+                                                   Foreground="#CC4444"
+                                                   HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <TextBlock x:Name="ChestText"
+                               Text="🎁"
+                               FontSize="120"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               IsVisible="False"/>
+                </Grid>
+
+                <!-- Кнопки действий -->
+                <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,8,0,0">
+                    <StackPanel x:Name="CombatButtonsPanel"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                IsVisible="False">
+                        <Button Content="⚔ Атаковать"
+                                Background="#8B0000"
+                                Foreground="White"
+                                FontSize="16"
+                                FontWeight="Bold"
+                                Padding="28,12"
+                                CornerRadius="6"
+                                BorderThickness="0"
+                                Margin="8,0"
+                                Click="OnAttackClick"/>
+                        <Button Content="🛡 Защититься"
+                                Background="#1A3A6A"
+                                Foreground="White"
+                                FontSize="16"
+                                FontWeight="Bold"
+                                Padding="28,12"
+                                CornerRadius="6"
+                                BorderThickness="0"
+                                Margin="8,0"
+                                Click="OnDefendClick"/>
+                    </StackPanel>
+
+                    <Button x:Name="OpenChestButton"
+                            Content="🎁 Открыть сундук"
+                            Background="#4A7A4A"
+                            Foreground="White"
+                            FontSize="16"
+                            FontWeight="Bold"
+                            Padding="36,12"
+                            CornerRadius="6"
+                            BorderThickness="0"
+                            HorizontalAlignment="Center"
+                            IsVisible="False"
+                            Click="OnOpenChestClick"/>
+
+                    <Button x:Name="NextFloorButton"
+                            Content="Следующий этаж →"
+                            Background="#C8A84B"
+                            Foreground="#1A1A1A"
+                            FontSize="16"
+                            FontWeight="Bold"
+                            Padding="36,12"
+                            CornerRadius="6"
+                            BorderThickness="0"
+                            HorizontalAlignment="Center"
+                            IsVisible="False"
+                            Click="OnNextFloorClick"/>
+
+                    <TextBlock x:Name="FrozenStatusText"
+                               Text="❄ Вы заморожены! Пропускаете ход."
+                               FontSize="14"
+                               Foreground="#00BFFF"
+                               HorizontalAlignment="Center"
+                               Margin="0,6,0,0"
+                               IsVisible="False"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Строка 3: Инвентарь (слева) | Логирование (справа) -->
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Инвентарь -->
+            <Border Grid.Column="0" Background="#252535" CornerRadius="8" Padding="12" Margin="0,0,4,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0"
+                               Text="Инвентарь"
+                               FontSize="15"
+                               FontWeight="Bold"
+                               Foreground="#C8A84B"
+                               Margin="0,0,0,8"/>
+
+                    <StackPanel Grid.Row="1">
+                        <Border Background="#1E1E2E" CornerRadius="4" Padding="8" Margin="0,0,0,6">
+                            <StackPanel>
+                                <TextBlock Text="Оружие:"
+                                           FontSize="11"
+                                           Foreground="#888899"/>
+                                <TextBlock x:Name="WeaponText"
+                                           FontSize="13"
+                                           Foreground="#C8A84B"
+                                           FontWeight="Bold"/>
+                            </StackPanel>
+                        </Border>
+
+                        <Border Background="#1E1E2E" CornerRadius="4" Padding="8">
+                            <StackPanel>
+                                <TextBlock Text="Броня:"
+                                           FontSize="11"
+                                           Foreground="#888899"/>
+                                <TextBlock x:Name="ArmorText"
+                                           FontSize="13"
+                                           Foreground="#6699CC"
+                                           FontWeight="Bold"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- Журнал событий -->
+            <Border Grid.Column="1" Background="#252535" CornerRadius="8" Padding="12" Margin="4,0,0,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0"
+                               Text="Журнал событий"
+                               FontSize="13"
+                               FontWeight="Bold"
+                               Foreground="#C8A84B"
+                               Margin="0,0,0,8"/>
+
+                    <ScrollViewer Grid.Row="1"
+                                  x:Name="LogScrollViewer"
+                                  VerticalScrollBarVisibility="Auto"
+                                  HorizontalScrollBarVisibility="Disabled">
+                        <ItemsControl x:Name="LogItemsControl">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}"
+                                               FontSize="11"
+                                               Foreground="#CCCCCC"
+                                               TextWrapping="Wrap"
+                                               Margin="0,1"/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>
